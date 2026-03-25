@@ -62,6 +62,7 @@ function calculate() {
   /* 4. Decimal places */
   const dp = Math.max(0, Math.min(6, parseInt(document.getElementById('decimals').value) || 2));
 
+  
   const n = data.length;
   const forecasts = new Array(n);
   forecasts[0] = F_init;
@@ -248,8 +249,8 @@ function renderChart(data, forecasts, nextForecast, n, dp) {
           borderWidth: 1,
           titleColor: '#f0f0f0',
           bodyColor: '#aaa',
-          titleFont: { family: 'IBM Plex Mono', size: 11 },
-          bodyFont:  { family: 'IBM Plex Mono', size: 10 },
+          titleFont: { family: 'IBM Plex Mono', size: 13 },
+          bodyFont:  { family: 'IBM Plex Mono', size: 12 },
           padding: 12,
           callbacks: {
             label(ctx) {
@@ -262,12 +263,12 @@ function renderChart(data, forecasts, nextForecast, n, dp) {
       scales: {
         x: {
           grid:  { color: 'rgba(255,255,255,0.05)' },
-          ticks: { color: '#aaa', font: { family: 'IBM Plex Mono', size: 10 } },
-          border:{ color: '#333333' }
+          ticks: { color: '#888', font: { family: 'IBM Plex Mono', size: 12 } },
+          border:{ color: '#2e2e2e' }
         },
         y: {
           grid:  { color: 'rgba(255,255,255,0.05)' },
-          ticks: { color: '#aaa', font: { family: 'IBM Plex Mono', size: 10 } },
+          ticks: { color: '#888', font: { family: 'IBM Plex Mono', size: 12 } },
           border:{ color: '#2e2e2e' }
         }
       }
