@@ -1,4 +1,3 @@
-
 let chartInstance = null; // holds the Chart.js instance so we can destroy/recreate
 
 /* ── Sync alpha slider ↔ number input ─────────────────────── */
@@ -249,8 +248,8 @@ function renderChart(data, forecasts, nextForecast, n, dp) {
           borderWidth: 1,
           titleColor: '#f0f0f0',
           bodyColor: '#aaa',
-          titleFont: { family: 'IBM Plex Mono', size: 15 },
-          bodyFont:  { family: 'IBM Plex Mono', size: 14 },
+          titleFont: { family: 'IBM Plex Mono', size: 11 },
+          bodyFont:  { family: 'IBM Plex Mono', size: 10 },
           padding: 12,
           callbacks: {
             label(ctx) {
@@ -263,12 +262,12 @@ function renderChart(data, forecasts, nextForecast, n, dp) {
       scales: {
         x: {
           grid:  { color: 'rgba(255,255,255,0.05)' },
-          ticks: { color: '#aaa', font: { family: 'IBM Plex Mono', size: 15 } },
+          ticks: { color: '#aaa', font: { family: 'IBM Plex Mono', size: 10 } },
           border:{ color: '#333333' }
         },
         y: {
           grid:  { color: 'rgba(255,255,255,0.05)' },
-          ticks: { color: '#aaa', font: { family: 'IBM Plex Mono', size: 15 } },
+          ticks: { color: '#aaa', font: { family: 'IBM Plex Mono', size: 10 } },
           border:{ color: '#2e2e2e' }
         }
       }
